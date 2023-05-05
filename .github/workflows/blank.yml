@@ -36,4 +36,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run!
-        run: echo ${{ github }}
+        run: |
+          echo ${{ github }}
+          echo ${{ github.path }}
+          echo ${{ github.workspace }}
